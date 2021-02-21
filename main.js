@@ -9,6 +9,7 @@ navigationBar.classList.toggle('active')
 
 const DONORS_URL = 'http://localhost:3000/donors';
 
+
 function constructTableRow(donor) {
   return `<tr><td>${donor.name}</td><td>${donor.phoneNumber}</td><td>${donor.city}</td><td>${donor.bloodType}</td></tr>`
 }
@@ -61,6 +62,9 @@ async function addDonor(event) {
 const form = document.getElementById('addDonor');
 form.addEventListener('submit', addDonor);
 
-
-
-
+const contactForm = document.getElementById('contactForm');
+contactForm.addEventListener('submit', function(event) {
+  event.preventDefault();
+  const nameElement = form.querySelector('input[name="firstname"]');
+  alert(`Thank you ${nameElement.value} for your feedback! We will get back to you.`)
+});
