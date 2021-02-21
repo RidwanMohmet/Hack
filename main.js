@@ -9,6 +9,7 @@ navigationBar.classList.toggle('active')
 
 const DONORS_URL = 'http://localhost:3000/donors';
 
+
 function constructTableRow(donor) {
   return `<tr><td>${donor.name}</td><td>${donor.phoneNumber}</td><td>${donor.city}</td><td>${donor.bloodType}</td></tr>`
 }
