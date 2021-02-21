@@ -1,0 +1,28 @@
+{
+    "donors": [
+      {
+        "id": 1,
+        "name": "Aamina",
+        "phoneNumber": "111111",
+        "city": "Hargeisa",
+        "bloodType": "A-"
+      },
+      {
+        "id": 2,
+        "name": "Khaalid",
+        "phoneNumber": "22222",
+        "city": "Hargeisa",
+        "bloodType": "B-"
+      },
+      {
+        "name": "Safia",
+        "phoneNumber": "12342134",
+        "city": "Hargeisa",
+        "bloodType": "O+",
+        "id": 3
+      }
+    ],
+    "profile": {
+      "name": "typicode"
+    }
+  }
