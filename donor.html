@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bloodDonation</title>
+    <link rel="stylesheet" href="./style/donor.css">
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+          <nav class="navbar d-flex">
+            <a href="" class="brand"><img src="./images/Logo.jfif" alt=""></span></a>
+    
+            <div class="burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="navigation-bar">
+              <ul class="links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./About.html">About</a></li>
+                <li><a href="#">Donor</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href=".\index.html" class="btn">Sign out</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!--##########-->
+      <section>
+        <div class="login-form">
+            <form action="http://192.168.52.166:6000/api/2/hacking/donor/" method="post">
+              <h2>Donate a blood</h2>
+              <input type="text" placeholder="Inter your name" name="username" required>
+              <input type="phone" placeholder="Enter your phone" name="phn" required>
+              <input type="text" placeholder="City/district" name="city" required>
+              <fieldset>
+                <legend>Selecting elements</legend>
+                <p>
+                   <label>Select list</label>
+                   <select id = "myList">
+                     <option value = "1">A-</option>
+                     <option value = "2">A+</option>
+                     <option value = "3">B-</option>
+                     <option value = "4">B+</option>
+                     <option value = "4">AB-</option>
+                     <option value = "4">AB+</option>
+                     <option value = "4">O-</option>
+                     <option value = "4">O+</option>
+                   </select>
+                </p>
+             </fieldset>
+              <button class="btn" type="submit">Send</button>
+            </form>
+          </div>
+        </section>
+      <!--##########-->
+      <footer>
+        <div class="header-footer">
+          <img src="./images/Logo.jfif" alt="">
+        </div>
+        <div class="header-footer " >
+          <h2>Blood Bank</h2>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+          <div class="header-footer ">
+            <h2>Features</h2>
+            <ul>
+              <li><a href="">Blood Donation</a></li>
+              <li><a href="">Blood Transfusion</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+        <div class="header-footer">
+          <h2>Social</h2>
+          <ul>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Twitter</a></li>
+            <li><a href="">Instgram</a></li>
+          </ul>
+        </div>
+      </footer>
+      <script src="main.js"></script>
+</body>
+</html>
